@@ -1,0 +1,25 @@
+$brand-color:#4AB39E;
+
+body{
+  font-family: "Open Sans" sans-serif;
+}
+
+.twocol{
+  columns:2;
+  >section{
+    break-inside: avoid;  
+  }
+  >section:first-child>h2{
+    margin-top: 0;
+  }
+  @media(max-width:767px){
+  columns:auto;
+  }
+}
+h1,h2,h3{
+  color:$brand-color;
+}
+
+table tr td:first-child{
+  padding-right: 10px;
+}

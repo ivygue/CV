@@ -1,0 +1,35 @@
+body {
+  font-family: "Open Sans" sans-serif;
+}
+
+.twocol {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+}
+
+.twocol > section {
+  -webkit-column-break-inside: avoid;
+     page-break-inside: avoid;
+          break-inside: avoid;
+}
+
+.twocol > section:first-child > h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .twocol {
+    -webkit-columns: auto;
+       -moz-columns: auto;
+            columns: auto;
+  }
+}
+
+h1, h2, h3 {
+  color: #4AB39E;
+}
+
+table tr td:first-child {
+  padding-right: 10px;
+}
